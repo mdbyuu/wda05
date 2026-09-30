@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Shell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-link active">Dashboard</a></li>
+          <li><a href="#" class="nav-link">Reports</a></li>
+          <li><a href="#" class="nav-link">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="topbar">
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+      <h1>Dashboard</h1>
+      <button id="btn-theme">🌙 Dark Mode</button>
+    </header>
+
+    <main class="content">
+      <section class="stat-cards" aria-label="Ringkasan statistik">
+        <div class="stat-card">
+          <p class="stat-label">Total Pengguna</p>
+          <p class="stat-value" id="stat-users">&mdash;</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Total Transaksi</p>
+          <p class="stat-value" id="stat-transactions">&mdash;</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Rata-rata</p>
+          <p class="stat-value" id="stat-average">&mdash;</p>
+        </div>
+        <button id="btn-refresh">Refresh Data</button>
+      </section>
+
+      <section class="chart-placeholder">
+        Grafik akan ditampilkan di sini (Pertemuan 11)
+      </section>
+
+      <section class="greeting-demo" aria-label="Visitor greeting demo"> 
+      <h2>Visitor Greeting (Demo)</h2> 
+      <input type="text" id="visitor-name" placeholder="Type your name..."> 
+      <button id="btn-greet-unsafe">Show (Unsafe)</button> 
+      <button id="btn-greet-safe">Show (Safe)</button> 
+      <div id="greeting-output"></div> 
+      </section>
+
+      <section class="comment-demo" aria-label="Comment box (demo)"> 
+      <h2>Visitor Comments (Demo)</h2> 
+      <input type="text" id="comment-input" placeholder="Write a comment..."> 
+      <button id="btn-comment">Post Comment</button> 
+      <div id="comment-box"></div> 
+      </section> 
+    </main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
